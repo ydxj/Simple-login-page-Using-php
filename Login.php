@@ -64,11 +64,14 @@
         <form action="Login.php" method="post">
             <input type="text" name="username" placeholder="Username">
             <input type="password" name="password" placeholder="Password">
-            <input type="submit" value="Login">
+            <input type="submit" value="Login" name="Login">
         </form>
     </div>
     <?php
         // link your MySql serveur and select your database
+        if(isset($_POST['Login'])){
+            //Try Your login and pass if there in the database  
+        }
     
     ?>
 </body>
